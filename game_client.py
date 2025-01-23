@@ -59,7 +59,7 @@ while True:
     print("Heartbeat...")
     data = str.encode("[S][M2]"+str_signature+"[E]")
     tcp_client_socket.sendall(data)
-    time.sleep(0.05)
+    time.sleep(5)
     
 #print("Closing client socket")
 tcp_client_socket.close()
